@@ -1,0 +1,27 @@
+/* Ensure the footer matches the page background */
+.footer {
+    background-color: transparent; /* Or the exact dark blue of your body */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/* Fix for the alignment in the content area */
+.container {
+    max-width: 1200px; /* Adjust based on your card layout width */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-cyan {
+    color: #40c4ff !important;
+}
+
+/* If you are using a main content wrapper with a sidebar */
+@media (min-width: 992px) {
+    /* If the footer is OUTSIDE the main wrapper, keep a margin. 
+       If it's INSIDE, set margin-left to 0. */
+    .footer {
+        margin-left: 0; 
+    }
+}

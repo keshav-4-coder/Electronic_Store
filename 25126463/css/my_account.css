@@ -1,0 +1,138 @@
+/* ===================================================================
+   Profile & Account Styles - Cyan/Teal Dark Theme
+   =================================================================== */
+
+/* Main Container Background */
+.register-container {
+    background: radial-gradient(circle at top right, #0c2531, #081822);
+    padding: 3rem 0;
+    min-height: calc(100vh - 70px);
+}
+
+/* Auth/Profile Card */
+.auth-card {
+    background-color: #0a1f2a;
+    border: 1px solid #1a3a4a;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(64, 196, 255, 0.05);
+    overflow: hidden;
+}
+
+/* Card Header Glow */
+.auth-header {
+    background: linear-gradient(90deg, #0d2a3a 0%, #0a1f2a 100%);
+    border-bottom: 2px solid #1a3a4a;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.auth-header h3 {
+    color: #40c4ff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-shadow: 0 0 10px rgba(64, 196, 255, 0.3);
+}
+
+/* Section Titles (Account Details vs Edit) */
+.form-section-title {
+    color: #40c4ff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #1a3a4a;
+    display: flex;
+    align-items: center;
+}
+
+.form-section-title i {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+/* Input Fields */
+.auth-body .form-control, 
+.auth-body .form-select {
+    background-color: #081822;
+    border: 1px solid #1a3a4a;
+    color: #c0d4dd;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.auth-body .form-control:focus, 
+.auth-body .form-select:focus {
+    background-color: #0c2531;
+    border-color: #40c4ff;
+    box-shadow: 0 0 0 0.25rem rgba(64, 196, 255, 0.15);
+    color: #ffffff;
+}
+
+/* Disabled Inputs (Username/Email) */
+.auth-body .form-control:disabled {
+    background-color: #06141d;
+    border-color: #112a36;
+    color: #627d8a;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #40c4ff;
+    border-color: #40c4ff;
+    color: #0a1f2a;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00b7eb;
+    border-color: #00b7eb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(64, 196, 255, 0.4);
+}
+
+.btn-outline-cyan {
+    color: #40c4ff;
+    border: 1px solid #40c4ff;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.btn-outline-cyan:hover {
+    background-color: rgba(64, 196, 255, 0.1);
+    color: #00ffff;
+    border-color: #00ffff;
+}
+
+/* Custom Alert Styles */
+.alert-success {
+    background-color: rgba(0, 255, 127, 0.1);
+    border-color: #00ff7f;
+    color: #00ff7f;
+}
+
+.alert-danger {
+    background-color: rgba(255, 64, 129, 0.1);
+    border-color: #ff4081;
+    color: #ff4081;
+}
+
+/* Responsive Padding */
+@media (max-width: 576px) {
+    .register-container {
+        padding: 1.5rem 10px;
+    }
+    .auth-body {
+        padding: 1.25rem;
+    }
+}

@@ -1,0 +1,8 @@
+# Ignore uploads
+25126463/uploads/
+
+# Ignore credentials
+25126463/credintials.txt
+
+# Ignore system files
+.DS_Store

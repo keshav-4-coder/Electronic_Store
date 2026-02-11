@@ -1,0 +1,142 @@
+/* css/index.css */
+:root {
+    --bg-cyan-dark: #0a1f2a;
+    --bg-hero: #0f2c3a;
+    --bg-card: #0f2c3a;
+    --bg-input: #0d2532;
+    --text-white: #f8f9fa;
+    --text-muted: #a0b0b8;
+    --border-cyan: #1a3a4a;
+    --border-cyan-hover: #2a5a6a;
+    --primary: #0d6efd;
+    --primary-hover: #0b5ed7;
+    --cyan-darker: #071822;
+    --shadow-sm: 0 6px 24px rgba(0,0,0,0.55);
+    --shadow-lg: 0 15px 50px rgba(0,0,0,0.7);
+    --transition: all 0.25s ease;
+}
+
+body {
+    background: var(--bg-cyan-dark);
+    color: var(--text-white);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-image: 
+        radial-gradient(circle at 25% 15%, rgba(13,110,253,0.08) 0%, transparent 25%),
+        radial-gradient(circle at 75% 85%, rgba(13,110,253,0.06) 0%, transparent 35%);
+    background-attachment: fixed;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-cyan);
+    box-shadow: var(--shadow-sm);
+}
+
+.form-control, .form-select {
+    background-color: var(--bg-input);
+    border-color: var(--border-cyan);
+    color: var(--text-white);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.table-dark {
+    --bs-table-bg: var(--bg-card);
+    color: var(--text-white);
+}
+
+/* ===================================================================
+   Hero Section - Cyan/Teal Dark Theme
+   =================================================================== */
+.hero {
+    background: linear-gradient(135deg, #0a1f2a 0%, #081822 100%);
+    padding: 120px 0;
+    position: relative;
+    border-bottom: 2px solid #1a3a4a;
+    overflow: hidden;
+}
+
+/* Optional: Add a subtle cyan glow behind the text */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(64, 196, 255, 0.1) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.hero h1 {
+    color: #40c4ff;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(64, 196, 255, 0.4);
+}
+
+.hero p.lead {
+    color: #c0d4dd;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Primary Button (Solid Cyan) */
+.hero .btn-primary {
+    background-color: #40c4ff;
+    border-color: #40c4ff;
+    color: #0a1f2a;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(64, 196, 255, 0.3);
+}
+
+.hero .btn-primary:hover {
+    background-color: #00b7eb;
+    border-color: #00b7eb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(64, 196, 255, 0.5);
+}
+
+/* Outline Button (Cyan Border) */
+.hero .btn-outline-light {
+    border-color: #40c4ff;
+    color: #40c4ff;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-outline-light:hover {
+    background: rgba(64, 196, 255, 0.1);
+    color: #00ffff;
+    border-color: #00ffff;
+    transform: translateY(-3px);
+}
+
+
+.product-img, .category-img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    background-color: #081822;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    border: 1px solid #40c4ff !important;
+}
